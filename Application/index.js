@@ -1,6 +1,6 @@
 import { HomePage } from '../components/HomePage';
 import { DishPage } from '../components/DishPage';
-import { Profile } from '../components/ProfilePage';
+import { ProfilePage } from '../components/ProfilePage';
 import { AddReview } from '../components/AddReview.js';
 import {Result} from "../components/Result";
 import { NavigationContainer } from '@react-navigation/native';
@@ -93,6 +93,18 @@ export default function Application() {
               tabBarLabel: 'Contact Us',
               tabBarIcon: ({ color, size }) => (
                 <Feather name="message-square" color={color} size={size}/>
+              ),
+            }}
+          />
+          <Tab.Screen
+            name="Profile Page"
+            component={ProfilePage}
+            options={{
+              headerShown: false,
+              tabBarActiveTintColor: '#FF7C60',
+              tabBarLabel: 'Profile',
+              tabBarIcon: ({ color, size }) => (
+                <Ionicons name="reader-outline" color={color} size={size}/>
               ),
             }}
           />
