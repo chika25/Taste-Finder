@@ -124,9 +124,8 @@ export function DishPage({ route, count, Increment }) {
     return <Text style={styles.noFoodText}>No food item found</Text>;
   }
 
-  console.log("before" + specificFood.count)
    // Increase the count for the food by 1
-  console.log("after" + count)
+   specificFood.count += 1
 
 
 
@@ -151,7 +150,6 @@ export function DishPage({ route, count, Increment }) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
-        {Increment(specificFood.count)}
         <View style={{ alignItems: "center" }}>
           <Text style={styles.foodNameText}>{specificFood.food_name}</Text>
         </View>

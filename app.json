@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "assignment1",
-    "slug": "assignment1",
+    "name": "taste_finder",
+    "slug": "taste_finder",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icons8-rice-bowl-24.png",
@@ -24,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.chika25.taste_finder"
     },
     "web": {
       "favicon": "./assets/icons8-rice-bowl-24.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "71cc72be-d87b-4275-844d-eb8fdb3bc95b"
+      }
     }
   }
 }

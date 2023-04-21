@@ -18,6 +18,7 @@ export function Result({ navigation, route }) {
   const [food, setFood] = useState([""]);
   //value sent form the home page
   let findvalue = route.params.paramkey;
+  console.log(findvalue)
   useEffect(() => {
     const url = "http://localhost:8000/"
     fetch(url)

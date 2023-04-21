@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const Food = require("./modules/food");
 const cors = require("cors");
 
-//CORS enables us to fetch localhost8000 from localhost
+//CORS enables us to fetch localhost8000 from localhost19006
 app.use(cors());
 
  mongoose.connect("mongodb+srv://ckurihara25:Abcd2155@cluster1.fqwupbi.mongodb.net/?retryWrites=true&w=majority");
